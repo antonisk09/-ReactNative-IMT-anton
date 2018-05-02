@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Platform,StyleSheet,Text,View, Button ,TextInput, Container} from 'react-native';
+import { Platform,StyleSheet,Text,View, Button ,TextInput} from 'react-native';
+import {Container, Header ,Title, Body} from 'native-base';
 
 
 class App extends Component {
@@ -38,9 +39,7 @@ class App extends Component {
           break;}
     return (
 
-
 <View style={{padding: 10, backgroundColor:'lightblue'}}>
-
 <TextInput style={{height: 40}} placeholder='Massa (Kg)'
 onChangeText={(x) => this.setState({x})}/>
 <TextInput style={{height: 40}} placeholder='Tinggi (Cm)'
@@ -52,11 +51,7 @@ onChangeText={(y) => this.setState({y})}/>
       color="purple"/>
 <Text>{`${this.state.sum}`}</Text>
 <Text style ={{fontSize:30}}>Hasil : {beratbadan}</Text>
-
-
-
-
-</View>    
+</View> 
 
     );
   }
